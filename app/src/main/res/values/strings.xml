@@ -1,4 +1,5 @@
 <resources>
   <string name="app_name">SpinnerSearch</string>
   <string name="select_hospital">Select Hospital</string>
+  <string name="close">Close</string>
 </resources>

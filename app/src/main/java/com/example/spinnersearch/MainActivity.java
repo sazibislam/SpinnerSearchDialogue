@@ -1,7 +1,7 @@
 package com.example.spinnersearch;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    final TextView selectedItems = (TextView) findViewById(R.id.txt);
+    final TextView selectedItems = findViewById(R.id.txt);
 
     items.add("Dhaka");
     items.add("Delhi");
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     items.add("Nikunjo");
 
     spinnerDialog = new SpinnerDialog(MainActivity.this, items,
-        "Select or Search City");
+        "Select or Search Hospital");
 
     spinnerDialog.setCancellable(true);
     spinnerDialog.setShowKeyboard(false);
